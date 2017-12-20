@@ -11,8 +11,7 @@ import spring.boot.example.wicket.components.Homepage;
 import spring.boot.example.wicket.components.MountedPage;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = { WebInitializer.class,
-		WicketWebApplication.class })
+@ContextConfiguration(classes = { SpringConfiguration.class, WicketWebApplication.class })
 public class WicketWebApplicationTest {
 
 	@Autowired
